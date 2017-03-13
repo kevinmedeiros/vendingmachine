@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <title>Vending Machine</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Vending machine simulation</h1>
@@ -45,11 +47,12 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"></script>
 
     <script>
-        require(["js/vendingMachine"], function(machineModule){
+        require(["js/vendingMachine"], function (machineModule) {
             var machine = new machineModule.VendingMachine();
             machine.size = machineModule.VendingMachineSize.medium;
             ko.applyBindings(machine);
         });
     </script>
 </body>
+
 </html>
